@@ -10,7 +10,7 @@ os.environ['GOOGLE_API_KEY'] = st.secrets['GOOGLE_API_KEY']
 location_template = "{"Netherlands", "Germany", "Austria"}"
 Provide the top 5 recommended places to visit in {location}. 
 Include a brief description of why each place is popular and must-visit for travelers.
-"""
+
 
 location_prompt = PromptTemplate(template=location_template, input_variables=["location"])
 
