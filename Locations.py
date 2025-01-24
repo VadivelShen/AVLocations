@@ -31,7 +31,7 @@ if st.button("Generate Recommendations"):
     if location.strip():
         # Invoke the chain with user input
         recommendations = recommendation_chain.invoke({"location": location})
-        st.subheader(f"Top 5 Places to Visit in {location}")
+        st.subheader("Top 5 Places to Visit in {location}")
         st.write(recommendations.content)
     else:
         st.warning("Please enter a valid location.")
