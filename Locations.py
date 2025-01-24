@@ -7,7 +7,7 @@ import os
 os.environ['GOOGLE_API_KEY'] = st.secrets['GOOGLE_API_KEY']
 
 # Prompt template for generating location recommendations
-location_template = "{"Netherlands", "Germany", "Austria"}"
+location_template = "Provide the top 5 recommended places to visit in {location}"
 Provide the top 5 recommended places to visit in {location}. 
 Include a brief description of why each place is popular and must-visit for travelers.
 
